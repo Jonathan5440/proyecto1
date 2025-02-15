@@ -18,13 +18,21 @@ cout << endl;
 }
 
 // Calcular factorial
-
-long long factorial(int n) {
-    long long facto = 1;
-    for (int i = 1; i <= n; i++) {
-        facto *= i;
-    }
-    return facto;
+int numero1, factorial=1;
+cout << "ingrese un numero para calcula su facotorial:";
+for (int i = 1; i <= numero1; i++) {
+    factorial *= i;
 }
-
-
+cout << "El factorial de " << numero1 << " es: " << factorial << endl;
+// Fibonacci
+int n, a = 0, b = 1, c;
+cout << "Ingrese cuántos términos de la serie Fibonacci desea ver: ";
+cin >> n;
+cout << "Serie Fibonacci: " << a << " " << b << " ";
+for (int i = 2; i < n; i++) {
+    c = a + b;
+    cout << c << " ";
+    a = b;
+    b = c;
+}
+cout << endl;
