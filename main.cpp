@@ -36,3 +36,44 @@ for (int i = 2; i < n; i++) {
     b = c;
 }
 cout << endl;
+
+
+// Numero Primo o No
+int nPrimo, ePrimo = 1;
+cout << "\nIngrese un número para verificar si es primo: ";
+cin >> nPrimo;
+if (numPrimo < 2) {
+    ePrimo = 0;
+} else {
+    for (int i = 2; i * i <= nPrimo; i++)
+        {if (nPrimo % i == 0) {
+
+            ePrimo = 0;
+            break;
+        }
+    }
+}
+if (ePrimo) {
+    cout << numPrimo << " es un número primo." << endl;
+} else {
+    cout << numPrimo << " no es un número primo." << endl;
+}
+//numero par o impar
+   int numPar;
+cout << "\nIngrese un número para verificar si es par o impar: ";
+cin >> numPar;
+if (numPar % 2 == 0) {
+    cout << numPar << " es un número par." << endl;
+} else {
+    cout << numPar << " es un número impar." << endl;
+}
+
+// Generar tabla de multiplicar del numero deseado
+int numTabla;
+cout << "\nIngrese un número para mostrar su tabla de multiplicar: ";
+cin >> numTabla;
+for (int i = 1; i <= 10; i++) {
+    cout << numTabla << " x " << i << " = " << numTabla * i << endl;
+}
+
+return 0;}
