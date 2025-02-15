@@ -1,3 +1,4 @@
+#include <atomic>
 #include <iostream>
 using namespace std;
 
@@ -12,6 +13,18 @@ int main () {
         cout << "6 x"<<i<< "="<<6* i << endl;
     }
 
-return 0;
+cout << endl;
 
 }
+
+// Calcular factorial
+
+long long factorial(int n) {
+    long long facto = 1;
+    for (int i = 1; i <= n; i++) {
+        facto *= i;
+    }
+    return facto;
+}
+
+
